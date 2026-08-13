@@ -1,0 +1,66 @@
+[
+  {
+    "id": "bank_fraud",
+    "name": "🏦 Bank Fraud — Account Block Scam",
+    "description": "Scammer impersonates a bank officer claiming the victim's account is frozen due to suspicious activity. Demands OTP, bank details, and phone verification.",
+    "scamType": "bank_fraud",
+    "messages": [
+      "URGENT ALERT: This is Officer Rajesh Verma from State Bank Security Division. Your savings account has been temporarily FROZEN due to suspicious transactions detected from your account. Immediate verification is required to prevent permanent blocking. Please cooperate immediately.",
+      "Sir, this is very serious matter. We have detected 3 unauthorized transactions worth Rs. 2,47,000 from your account in the last 24 hours. If you do not verify your identity RIGHT NOW, your account will be permanently blocked and funds will be seized. My official phone number is +919876543210, you can verify.",
+      "I understand your concern sir. For verification, I need your registered mobile number and the last 4 digits of your account number. This is standard RBI protocol. My employee ID is EMP-2847. You can also reach our department at bankfraud.security@sbi-alerts.com for confirmation.",
+      "Thank you for cooperating. Now sir, your account number ending with those digits is linked to account 1234567890123456 in our system. I can see the unauthorized transactions. To reverse them, I need to send you a One-Time Password. Please share the OTP as soon as you receive it.",
+      "Sir, time is running out. The fraudsters are still active on your account. To immediately block their access, please make a verification payment of Rs. 1 to our secure UPI ID: security.verify@okaxis — this will confirm your identity and lock out the fraudsters.",
+      "I understand you are worried. You can verify this entire process on our official security portal at http://sbi-security-verify.com/kyc-check. This is the official State Bank verification website. Please visit it and enter your details for cross-verification.",
+      "Sir, this is your FINAL WARNING. If you do not complete verification in the next 5 minutes, your account 1234567890123456 will be permanently blocked and you will lose access to all funds. RBI guidelines require immediate compliance. Share the OTP now or your money is at risk.",
+      "Sir one more thing — you can also reach our alternate verification helpline at +918765432109 or email us at verify.accounts@sbi-helpdesk.in. We are here to help you protect your money. Please act NOW before it's too late. The fraudsters are withdrawing as we speak."
+    ]
+  },
+  {
+    "id": "upi_fraud",
+    "name": "📱 UPI Fraud — Fake Refund Scam",
+    "description": "Scammer poses as an e-commerce customer support agent offering a refund, but tricks the victim into sending money via UPI instead of receiving it.",
+    "scamType": "upi_fraud",
+    "messages": [
+      "Hello! This is Priya from FlipShop Customer Support. We noticed that your recent order #FK-9928374 was delivered damaged. We sincerely apologize for the inconvenience. We want to process an immediate refund of Rs. 4,999 to your account.",
+      "I completely understand your frustration sir. To process your refund quickly, I need to verify your registered mobile number. Can you please confirm? Also, for our records, my direct contact number is +917654321098 if the call drops.",
+      "Perfect. Now sir, I'm sending you a UPI refund request. Please ACCEPT the request to receive your refund amount. The refund will be processed through our verified UPI business ID: flipshop.refunds@ybl. This is our official refund channel.",
+      "Sir, I see the payment didn't go through. Sometimes the UPI system requires you to enter your PIN to RECEIVE the refund. This is a new RBI security feature for amounts above Rs. 2000. Please try again and enter your UPI PIN when prompted.",
+      "I apologize for the inconvenience. Let me try an alternate refund method. Can you please share your bank account number and IFSC code? We can do a direct NEFT transfer instead. Our accounts team email is refunds@flipshop-support.com for any queries.",
+      "Sir, while the NEFT is processing, our system requires a small verification charge of Rs. 10 to confirm your identity. Please send Rs. 10 to our verification UPI: verify.flipshop@paytm. This amount will be refunded along with your original refund.",
+      "I understand your hesitation sir. You can verify this entire refund process on our customer portal at http://flipshop-refund-portal.com/verify. Everything is documented there. You can also reach our senior manager at +919988776655 for escalation.",
+      "Sir, your refund window is closing in 10 minutes. After that, the refund amount of Rs. 4,999 will be forfeited as per our policy. Please complete the verification immediately. Our official support email is support@flipshop-care.in — you can write to us anytime."
+    ]
+  },
+  {
+    "id": "phishing_link",
+    "name": "🔗 Phishing — Fake KYC Verification",
+    "description": "Scammer sends fake KYC update links impersonating a telecom provider, attempting to harvest personal credentials and payment information.",
+    "scamType": "phishing_link",
+    "messages": [
+      "IMPORTANT: Your Jio mobile number will be DISCONNECTED within 24 hours due to incomplete KYC verification. As per TRAI regulations, all users must complete e-KYC by June 2026. Update your KYC immediately to avoid service disruption.",
+      "Sir, this is automated message from Jio Compliance Team. Your number ending with 8899 is flagged for KYC non-compliance. Please call our KYC helpline at +918877665544 or visit our verification center. Failure to comply will result in permanent number deactivation.",
+      "I am Amit from Jio KYC department. To complete your KYC online, please visit our official e-KYC portal: http://jio-kyc-update.com/verify-now. You need to upload your Aadhaar and PAN details. This is mandatory as per DOT circular dated 15th May 2026.",
+      "Sir, for faster processing, you can also complete KYC through our WhatsApp verification. Send your Aadhaar number to our official email: kyc.verification@jio-support.net. Our team will process it within 30 minutes.",
+      "I see you haven't completed the verification yet. Let me help you directly. Please share your full name, date of birth, and Aadhaar number. I will update it in our system. You can verify my identity — my employee code is JIO-KYC-4521 and you can reach me at +919123456789.",
+      "Sir, there is a nominal KYC processing fee of Rs. 35 as per new TRAI guidelines. Please pay through our secure payment link: http://jio-kyc-payment.com/pay-now or send to our UPI: jio.kyc.official@icici. This is a one-time government mandated charge.",
+      "Your number will be disconnected in exactly 2 hours. This is the FINAL reminder. Please complete verification at http://jio-ekyc-portal.in/last-chance immediately. You can also visit any Jio store with your original Aadhaar. Contact us at support@jio-kyc-helpdesk.com.",
+      "Sir, we are trying to help you save your number. As a last resort, please download our KYC verification app from http://jio-kyc-app.com/download and complete the process. For any issues, call our senior supervisor at +917766554433 or email escalation@jio-compliance.in."
+    ]
+  },
+  {
+    "id": "generic_scam",
+    "name": "⚠️ Generic — Lottery & Prize Scam",
+    "description": "Scammer claims the victim won a lottery/prize and needs to pay processing fees to claim it. Uses multiple channels to pressure the victim.",
+    "scamType": "generic",
+    "messages": [
+      "CONGRATULATIONS!!! You have been selected as the WINNER of the International Digital Lottery 2026! Your ticket number TKT-99281 has won a GRAND PRIZE of Rs. 25,00,000 (Twenty Five Lakhs). Contact us immediately to claim your winnings!",
+      "Dear winner, this is Sandeep Kumar, Senior Claims Officer at International Digital Lottery. Your prize is verified and ready for disbursement. Please call me directly at +919445566778 to initiate the claim process. You have only 48 hours to claim.",
+      "Sir, to process your winning amount, we need to verify your identity. Please share your full name, phone number, and email address. You can also email your details to claims@intl-digital-lottery.com. Our head office verification team will process it immediately.",
+      "Great news! Your identity is verified. Now, as per government regulations, there is a mandatory TDS (Tax Deducted at Source) processing fee of Rs. 5,000 that must be paid before we can release your Rs. 25 lakh prize money. This is standard procedure.",
+      "Please transfer the TDS fee to our official accounts: Bank Account Number 9876543210987654, IFSC: HDFC0001234, Account Name: Intl Digital Lottery Trust. Or you can pay via UPI to: lottery.claims@okhdfc for instant processing.",
+      "Sir, I understand your concern. You can verify the entire lottery on our official website: http://intl-digital-lottery.com/winners-2026. Your name and ticket number are listed there. You can also contact our Mumbai office at +912233445566.",
+      "Sir, the prize claim deadline is approaching. If you don't pay the processing fee by tonight, your Rs. 25 lakh prize will be transferred to the next alternate winner. Our compliance email is compliance@digital-lottery-intl.org — contact them if you need extension.",
+      "FINAL NOTICE: This is your last chance to claim Rs. 25,00,000. Pay Rs. 5,000 TDS processing fee NOW to UPI: lottery.final@ybl or bank account 9876543210987654. Contact our director at +919900112233 or director@intl-lottery-claims.com. Prize expires at midnight!"
+    ]
+  }
+]
