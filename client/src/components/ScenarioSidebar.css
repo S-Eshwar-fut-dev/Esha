@@ -1,0 +1,152 @@
+.sidebar {
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  background: #F8FAFC;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  padding: 1.25rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+  background: #FFFFFF;
+}
+
+.sidebar-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sidebar-desc {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.sidebar-list {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.scenario-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-glass);
+  cursor: pointer;
+  transition: all var(--duration-base) var(--ease-out);
+  overflow: hidden;
+  animation: slideUp var(--duration-slow) var(--ease-out) both;
+}
+
+.scenario-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.scenario-card:hover:not(.disabled) {
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-indigo);
+}
+
+.scenario-card.selected {
+  border-color: var(--accent-indigo);
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.scenario-glow {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-brand);
+  opacity: 0;
+  transition: opacity var(--duration-base);
+  pointer-events: none;
+}
+
+.scenario-card.selected .scenario-glow {
+  opacity: 0.06;
+}
+
+.scenario-card-inner {
+  position: relative;
+  z-index: 1;
+  padding: 0.85rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.scenario-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.scenario-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.scenario-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scenario-desc {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.scenario-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scenario-type-tag {
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-size: 0.58rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.type-bank_fraud { background: rgba(239,68,68,0.12); color: #ef4444; }
+.type-upi_fraud { background: rgba(245,158,11,0.12); color: #f59e0b; }
+.type-phishing_link { background: rgba(168,85,247,0.12); color: #a855f7; }
+.type-generic { background: rgba(34,211,238,0.12); color: #22d3ee; }
+
+.scenario-msgs {
+  font-size: 0.6rem;
+  color: var(--text-dim);
+}

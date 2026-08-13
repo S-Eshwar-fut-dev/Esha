@@ -1,0 +1,101 @@
+/* ════════════════════════════════════════════
+   App Shell Layout
+   ════════════════════════════════════════════ */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr 380px;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 60px);
+}
+
+/* ════════════════════════════════════════════
+   Right Panel Tabs
+   ════════════════════════════════════════════ */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--border-subtle);
+  background: #F8FAFC;
+  overflow: hidden;
+}
+
+.right-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-subtle);
+  background: #FFFFFF;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.right-tab {
+  flex: 1;
+  padding: 0.7rem 0.5rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+.right-tab:hover {
+  color: var(--text-primary);
+  background: #F1F5F9;
+}
+
+.right-tab.active {
+  color: #4F46E5;
+  border-bottom-color: #4F46E5;
+  background: #EEF2FF;
+}
+
+.tab-count {
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-full);
+  background: #EEF2FF;
+  color: #3730A3;
+  font-size: 0.6rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+  animation: countPop 0.3s var(--ease-spring);
+}
+
+.right-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ════════════════════════════════════════════
+   Responsive
+   ════════════════════════════════════════════ */
+@media (max-width: 1200px) {
+  .main-grid {
+    grid-template-columns: 240px 1fr 340px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: auto;
+  }
+}
