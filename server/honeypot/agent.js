@@ -21,7 +21,7 @@ let MODEL_NAME = "gpt-4o-mini";
 if (isGroq) {
   providerName = "Groq";
   baseURL = "https://api.groq.com/openai/v1";
-  MODEL_NAME = "llama-3.3-70b-versatile";
+  MODEL_NAME = "qwen/qwen3.8-27b";
 } else if (isGemini) {
   providerName = "Gemini";
   baseURL = "https://generativelanguage.googleapis.com/v1beta/openai/";
